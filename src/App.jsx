@@ -10,6 +10,7 @@ import { Clock, Users, Globe, Trophy, Zap } from "lucide-react";
 import artwork1 from "./assets/artwork_1_data_wars.png";
 import artwork2 from "./assets/artwork_2_titans_clash.png";
 import "./App.css";
+import { Analytics } from "@vercel/analytics/react";
 
 const ROUND_DURATION = 60 * 60 * 1000; // 1 hour in milliseconds
 
@@ -373,6 +374,7 @@ function App() {
           </p>
         </div>
       </footer>
+      <Analytics />
     </div>
   );
 }
